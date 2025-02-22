@@ -1,0 +1,301 @@
+section.guildGrid {
+  padding: 30px 80px;
+  font-family: outfit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.guildGrid-heading h1 {
+  font-weight: 600;
+  font-size: clamp(24px, 5vw, 60px);
+  line-height: clamp(40px, 10vw, 90px);
+}
+
+span.guildGreen {
+  background: #42a855;
+  color: white;
+  padding: 4px 20px;
+  border-radius: 60px;
+}
+
+span.unique {
+  border: 1px solid black;
+  padding: 4px 20px;
+  border-radius: 60px;
+}
+
+.guild-titles p {
+  font-size: clamp(16px, 2vw, 24px);
+  margin-bottom: 16px;
+}
+
+/* -------------------- Grid Layout -------------------- */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  margin: auto;
+  gap: 0;
+}
+
+.guildCard {
+  background: red;
+  color: white;
+  display: flex;
+  font-family: outfit;
+  padding: 16px;
+}
+/* card - 1 */
+.guildCard-1 {
+  grid-column: span 2;
+  height: 500px;
+  background: url("/assets/guildCard/guildcard1.webp") no-repeat top/cover;
+  text-align: left;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  gap: 16px;
+}
+.guildCard-1 h1 {
+  font-size: clamp(20px, 2.5vw, 36px);
+  text-transform: uppercase;
+  font-weight: 200;
+}
+.guildCardLine {
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
+}
+.guildCard-1 .cardBottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.guildCard-1 .cardBottom .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.guildCard-1 .cardBottom .left img {
+  width: clamp(16px, 2vw, 30px);
+  height: clamp(16px, 2vw, 30px);
+}
+.guildCard-1 .cardBottom .upright img {
+  width: clamp(16px, 2vw, 30px);
+  height: clamp(16px, 2vw, 30px);
+}
+.cardBottom .left h1 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.guildCard-2,
+.guildCard-3 {
+  grid-column: span 1;
+  height: 500px;
+}
+/* card - 2 */
+.guildCard-2 {
+  background: #42a855;
+  flex-direction: column;
+  justify-content: space-between;
+  color: black;
+}
+.guildCard-2 .top h2 {
+  font-size: clamp(16px, 3vw, 26px);
+  font-weight: 300;
+  width: 50%;
+}
+
+.guildCard-2 .top h1 {
+  font-size: clamp(64px, 5vw, 96px);
+  font-weight: 200;
+  text-align: left;
+}
+.guildCard-2 .bottom h3 {
+  font-size: clamp(14px, 2vw, 22px);
+  font-weight: 300;
+}
+/* card - 3 */
+.guildCard-3 {
+  background: url("/assets/guildCard/guildcardthree.webp") no-repeat
+    center/cover;
+  align-items: end;
+}
+.guildCard-3 .card-third {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.guildCard-3 .card-third .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.guildCard-3 .card-third .left h1 {
+  font-size: 20px;
+  font-weight: 200;
+}
+.guildCard-3 .card-third img {
+  width: clamp(16px, 2vw, 30px);
+  height: clamp(16px, 2vw, 30px);
+}
+/* card - 4 */
+.guildCard-4,
+.guildCard-5 {
+  grid-column: span 1;
+  height: 250px;
+}
+
+.guildCard-4 {
+  background: #3ea3cd;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.guildCard-4 h4 {
+  font-size: clamp(18px, 2vw, 26px);
+  color: black;
+  font-weight: 300;
+  width: 50%;
+}
+/* card - 5 */
+.guildCard-5 {
+  background: #969698;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.guildCard-5 h4 {
+  font-size: clamp(18px, 2vw, 26px);
+  text-align: center;
+}
+.guildCard-5 h1 {
+  font-size: clamp(32px, 4vw, 96px);
+  font-weight: 200;
+}
+/* card - 6 */
+.guildCard-6 {
+  grid-column: span 2;
+  background: #f8b353;
+  height: 250px;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+.guildCard-6 .left h4 {
+  font-size: 24px;
+  font-weight: 200;
+}
+.guildCard-6 .left h1 {
+  font-size: clamp(64px, 5vw, 96px);
+  font-weight: 200;
+}
+
+.guildCard-6 .right .guildUsers img:nth-child(2),
+.guildCard-6 .right .guildUsers img:nth-child(3),
+.guildCard-6 .right .guildUsers img:nth-child(4),
+.guildCard-6 .right .guildUsers img:nth-child(5) {
+  margin-left: -30px;
+}
+
+.guildCard-6 .right {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  gap: 8px;
+}
+.guildCard-6 .right h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.guildCard-6 .right h5 {
+  font-size: 16px;
+  font-weight: 300;
+}
+/* ------------------------------------ - ----------------------------------- */
+
+/* Tablet View (≤ 1224px) */
+@media (max-width: 1224px) {
+  section.guildGrid {
+    padding: 0 30px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .guildCard-1 {
+    grid-column: span 2;
+    height: 300px;
+  }
+
+  .guildCard-2,
+  .guildCard-3 {
+    height: 400px;
+  }
+
+  .guildCard-6 {
+    grid-column: span 2;
+    height: 150px;
+  }
+  .guildCard-1 h1 {
+    color: black;
+  }
+}
+
+@media (max-width: 500px) {
+  .guildGrid-heading h1 {
+    text-align: center;
+  }
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .guildCard {
+    width: 100%;
+  }
+  .guildCard-1 {
+    height: 150px;
+  }
+
+  .guildCard-2 {
+    align-items: center;
+  }
+  .guildCard-2 .top h2 {
+    width: 100%;
+  }
+  .guildCard-2 .top h1 {
+    text-align: center;
+  }
+
+  .guildCard-2,
+  .guildCard-3,
+  .guildCard-4,
+  .guildCard-5 {
+    flex-direction: row;
+    height: 150px;
+  }
+  .guildCard-4 {
+    justify-content: space-between;
+  }
+  .guildCard-5 {
+    justify-content: space-between;
+  }
+  .guildCard-6 {
+    height: 300px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .guildCard-6 .left {
+    text-align: center;
+  }
+  .guildCard-6 .right {
+    text-align: center;
+    width: 70%;
+  }
+}

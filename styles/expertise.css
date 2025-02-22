@@ -1,0 +1,244 @@
+section.expertise {
+  padding: 30px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  margin-top: 60px;
+}
+
+section.expertise .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+section.expertise .heading .title h1 {
+  font-size: clamp(36px, 4vw, 48px);
+  font-family: "Outfit";
+}
+section.expertise .heading .context {
+  text-align: right;
+  width: 60%;
+}
+section.expertise .heading .context p {
+  font-size: clamp(16px, 3vw, 24px);
+  line-height: clamp(20px, 4vw, 32px);
+  font-family: "Outfit";
+  font-weight: 200;
+}
+
+.expertise-line, .card-line{
+    width: 100%;
+    height: 1px;
+    background: #000;
+}
+.expertise-cards{ 
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap:20px;
+    width: 100%;
+    padding: 20px 0px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.expertise-cards::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome/Safari */
+}
+.expert-card{
+    position: relative;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap:18px;
+    background:#EBEBEB;
+    padding: 14px;
+    border-radius: 20px;
+    user-select: none;
+    flex-shrink: 0;
+}
+
+
+.card-heading{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+}
+.arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px ;
+    height: 60px;
+    background-color: black; 
+    border-radius: 50%;
+}
+.card-title{
+    font-family: outfit;
+    font-size:36px;
+    font-weight: bold;
+
+}
+.arrow-container i {
+    font-size: 24px;
+    color: white;  
+    transform: rotate(45deg);  
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    gap:18px;
+}
+
+.card-content .context p{
+    font-family: outfit;
+    font-weight: 200;
+    font-size:20px;
+}
+
+.card-content .image{
+width: 100%;
+height: 180px;
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 10px;
+
+}
+.card-content .image-one{
+    background-image: url('/assets/expertise/expertiseFrame1.webp');
+
+}
+.card-content .image-two{
+    background-image: url('/assets/expertise/expertiseFrame2.webp');
+}
+.card-content .image-three{
+    background-image: url('/assets/expertise/expertiseFrame3.webp');
+}
+
+.arrow-container-Big{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px; 
+    height: 130px; 
+    background-color: #2457C5; 
+    border-radius: 50%; 
+    bottom: 0; 
+    left:0;
+    border: 10px solid white;
+    visibility: hidden;
+}
+.arrow-container-Big i {
+    font-size: 54px;
+    color: white;  
+    transform: rotate(45deg);  
+}
+/* ------------------------------------ - ----------------------------------- */
+.expert-card {
+    background: #EBEBEB;
+    color: #000;
+    transition: all 0.3s ease;
+  }
+  
+  .expert-card .arrow-container-Big {
+    visibility: hidden;
+  }
+  
+  .expert-card.active {
+    background: #42A855;
+    color: white;
+    border-bottom-left-radius: 50%;
+  }
+  
+  .expert-card.active .arrow-container-Big {
+    visibility: visible;
+  }
+  
+  .expert-card.active .arrow-container {
+    visibility: hidden;
+  }
+  
+  .expert-card.active .card-content .image {
+    border-bottom-left-radius: 220px;
+  }
+
+/* ------------------------------------ - ----------------------------------- */
+
+.expertise-bottom{
+  display: flex;
+  justify-content: space-between;
+  gap:20px;
+}
+.logo-count{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: outfit;
+  text-align: right;
+  width: 50%;
+}
+
+.logo-count .logo img{
+  width: clamp(80px, 8vw, 120px);
+  height: clamp(80px, 8vw, 120px);
+}
+
+.expertise-bottom .main p{
+  text-transform: uppercase;
+  font-family: outfit;
+  font-weight: 500;
+  font-size: clamp(24px, 5vw, 64px);
+}
+
+
+
+.logo-count .count h1{
+  font-size: clamp(40px, 5vw, 64px);
+}
+
+
+.logo-count .count h4{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+
+.logo-count .count h1 span{
+  color:#979797;
+}
+
+
+/* ------------------------------------ - ----------------------------------- */
+
+@media (max-width: 780px){
+
+    section.expertise{
+            padding: 0 30px;    
+    }
+    section.expertise .heading {
+        justify-content: left;
+       flex-direction: column;
+       align-items: start;
+      }
+      section.expertise .heading .context {
+        text-align: left;
+        width: 100%;
+      }
+      
+      .expertise-bottom{
+        flex-direction: column;
+      }
+      .logo-count{
+
+        width: 100%;
+        flex-direction: row;
+      }
+}

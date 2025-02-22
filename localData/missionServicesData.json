@@ -1,0 +1,39 @@
+[
+    {
+        "title": "Strategic Consulting from our team",
+        "content": "We provide tailored business strategies that align with your goals, ensuring clarity and direction for long-term success.",
+        "left": "Service Rating : 4.5/5",
+        "color": "red",
+        "image": "service1.webp"
+    },
+    {
+        "title": "Skill Development Programs to grow",
+        "content": "Empowering entrepreneurs through workshops and training sessions to build essential skills for leadership and growth.",
+        "left": "Service Rating : 4.0/5",
+        "image": "service2.webp"
+    },
+    {
+        "title": "Community Support and Guidance",
+        "content": "Join a thriving community of like-minded entrepreneurs, sharing experiences, advice, and encouragement along your journey.",
+        "left": "Service Rating : 4.2/5",
+        "image": "service3.webp"
+    },
+    {
+        "title": "Digital Presence Solutions for business",
+        "content": "Boost your online visibility with services like website development, branding, and digital marketing tailored to your business.",
+        "left": "Service Rating : 4.6/5",
+        "image": "service4.webp"
+    },
+    {
+        "title": "Legal and Compliance Assistance expert",
+        "content": "Navigate the complexities of legal requirements with our expert guidance on registrations, compliance, and documentation.",
+        "left": "Service Rating : 4.8/5",
+        "image": "service5.webp"
+    },
+    {
+        "title": "Growth Acceleration Packages to expand",
+        "content": "Accelerate your growth with access to funding strategies, marketing solutions, and operational scaling tools.",
+        "left": "Service Rating : 4.0/5",
+        "image": "service6.webp"
+    }
+]

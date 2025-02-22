@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Launch of the Innovators' Guild Mentorship Program",
+        "content": "We are excited to announce the launch of our Mentorship Program, connecting entrepreneurs with experts from across industries",
+        "firstTag": "#workGrow","secondTag": "#MentorGrip",
+        "image": "update1.webp"
+    },
+    {
+        "title": "Skill Development Programs to grow",
+        "content": "This collaboration will allow us to provide our members with exclusive opportunities for joint ventures, startup funding, and high-level networking.",
+        "image": "update2.webp",
+        "firstTag": "#GuildPartners","secondTag": "#IndustryLink"
+    },
+    {
+        "title": "Zolve Secures $100 Million in Series C Funding",
+        "content": "Zolve, a fintech startup offering seamless banking services to Indians living abroad, has raised $100 million in its Series C funding round.",
+        "firstTag": "#IndiaStartup","secondTag": "#SeriesC",
+        "image": "update3.webp"
+    },
+    {
+        "title": "Upcoming Webinars on Entrepreneurship",
+        "content": "We are thrilled to announce a series of webinars and online workshops aimed at helping startups thrive in today’s fast-paced environment.",
+        "firstTag": "#LearnGrow","secondTag": "#GuildWebinars",
+        "image": "update4.webp"
+    },
+    {
+        "title": " New Guild Co-Working Space for Collaborations",
+        "content": "In response to increasing demand, we’re launching a state-of-the-art co-working space designed to foster collaboration, creativity, and growth..",
+        "firstTag": "#GuildSpace","secondTag": "#CollabHub",
+        "image": "update5.webp"
+    }
+]

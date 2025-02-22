@@ -1,0 +1,145 @@
+section.blackGround{
+    background: #000;
+}
+
+section.iguild {
+    padding: 30px 80px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin-top: 60px;
+    font-family: outfit;
+    color:white;
+  }
+
+  .iguild-heading h1{
+    font-size: clamp(32px, 5vw, 128px);
+
+  }
+  .iguild-heading p{
+    font-size: clamp(20px,2vw, 24px);
+  }
+.iguildCards{
+    display: flex;
+    gap:40px;
+    justify-content: space-between;
+}
+.iguildCard{
+width: 100%;
+border:1px solid white;
+}
+
+.cardLogo{
+display: flex;
+align-items: center;
+justify-content: center;
+gap:10px;
+font-size: 30px;
+font-weight: bold;
+color:#043D54;
+background: white;
+padding: 20px 40px;
+}
+.guildIcon{
+  width: clamp(50px, 7vw, 170px);
+  height: clamp(50px, 7vw, 170px);
+}
+.guildCard-upper, .guildCard-below{
+  padding: 20px;
+}
+.guildCard-upper{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+.guildTitle h3, .guildTitle h2{
+  font-size: clamp(20px,4vw,36px);
+  font-weight: 400;
+}
+.guildTitle h2{
+  font-weight: 600;
+  font-size: clamp(24px,4vw,42px);
+}
+.guildContent h2{
+  font-size: clamp(20px,3vw,30px);
+  font-weight: 200;
+  margin-bottom: 10px;
+  line-height: clamp(20px,3vw,28px);
+}
+.guildContent h4{
+  font-weight: normal;
+}
+.guildCard-below{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.guildCard-below h2{
+  font-size: 20px;
+  font-weight: 400;
+}
+.guildApply{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap:20px;
+}
+.guildApply h1{
+  font-size: clamp(24px, 3vw,36px);
+}
+.guildApply p{
+  font-size: clamp(16px, 3vw,24px);
+}
+button.guildapplyBtn{
+  padding: 10px 20px;
+  background: black;
+  border: 1px solid white;
+  color: white;
+  font-family: outfit;
+  text-transform: uppercase;
+  font-size: clamp(16px,3vw,28px);
+  cursor: pointer;
+}
+button.guildapplyBtn:hover{
+  background: white;
+  color: black;
+}
+.matter h2{
+  cursor: pointer;
+}
+.guildTitleOne h3,.guildTitleOne h2, .guildContentOne h2, .matterOne h2{
+  color: #42A855;
+}
+.guildTitleTwo h3,.guildTitleTwo h2, .guildContentTwo h2, .matterTwo h2{
+  color: #F8B353;
+}
+.guildTitleThree h3,.guildTitleThree h2, .guildContentThree h2, .matterThree h2{
+  color: #3EA3CD;
+}
+/* ------------------------------------ - ----------------------------------- */
+  @media (max-width: 1024px) {
+    section.blackGround{
+      background: #000;
+  }
+    section.iguild {
+      padding: 40px 30px;
+    }
+    .iguildCards{
+      flex-direction: column;
+    }
+    .cardLogo{
+      padding: 10px 30px;
+    }
+    .guildCard-upper,    .guildCard-below{
+      flex-direction: row;
+      justify-content: space-between;
+    }
+}
+
+@media (max-width: 500px) {
+  .guildCard-upper{
+    flex-direction: column;
+  }
+}

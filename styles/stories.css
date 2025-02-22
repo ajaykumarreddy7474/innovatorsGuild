@@ -1,0 +1,122 @@
+section.stories {
+    padding: 30px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+    font-family: outfit;
+  }
+  .stories-heading{
+    display: flex;
+    justify-content: space-between;
+    background: #000;
+    color:white;
+    padding: 40px 20px;
+  }
+
+  .stories-heading h1{
+    font-size: clamp(36px, 5vw, 128px);
+  }
+  
+  .stories-matter{
+    text-align: right;
+    width:50%;
+  }
+  .stories-matter p{
+    font-size: clamp(16px, 2vw, 24px);
+    font-weight: 200;
+    margin-bottom: 10px;
+
+  }
+
+  .stories-matter p span{
+    font-weight: bold;
+      }
+
+  button.story{
+    background: #000;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color:white;
+    font-family: outfit;
+    font-weight: 200;
+    border:1px solid white;
+  }
+  .stories-startup{
+    display: flex;
+  }
+  .storyCard{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+  }
+  .storyCardOne{
+    background: #42A855;
+  }
+  .storyCardTwo{
+    background: #3EA3CD;
+  }
+  .storyCardThree{
+    background: #F8B353;
+  }
+  .storyCard p{
+    padding: 20px;
+    width: 70%;
+    font-size: clamp(16px, 2vw, 24px);
+  }
+  .storyCard .founderImage{
+    position: absolute;
+    z-index: 1;
+    bottom:0;
+    right: 0;
+    width: clamp(140px, 14vw, 240px);
+  }
+.startupName{
+display: flex;
+justify-content:space-between;
+align-items: center;
+background: white;
+position: absolute;
+bottom: 5%;
+width: 100%;
+padding: 10px;
+z-index: 10;
+}
+.names{
+    line-height: 30px;
+}
+.names h3{
+    font-size: clamp(20px, 2vw, 30px);
+    font-weight: 500;
+}
+.names h3 span{
+    color: #42A855;
+}
+img.ycombinator{
+width:40px;
+ height: 40px;
+}
+  /* ------------------------------------ - ----------------------------------- */
+  @media (max-width: 780px){
+    .stories-startup{
+        display: flex;
+        flex-direction: column;
+      }
+.names{
+    display: flex;
+}
+      section.stories {
+        padding: 0px 30px;
+      }
+      .stories-heading{
+        flex-direction: column;
+      }
+      .stories-matter{
+        text-align: left;
+        width:100%;
+      }
+      .storyCard{
+    height: 200px;
+      }
+  }  

@@ -1,0 +1,139 @@
+section.flowchart {
+  padding: 30px 80px;
+  font-family: outfit;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 24px;
+  margin-top: 60px;
+}
+
+.flowchart-heading h1 {
+  font-family: "Ovo", serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: clamp(32px, 5vw, 92px);
+}
+
+.flowchart-titles p {
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+.flowchart-titles p span {
+  font-weight: bold;
+}
+
+.flowchart-wrapper {
+  overflow-x: auto;
+  display: flex;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.flowchart-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.flowchart-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2px;
+  align-items: center;
+}
+
+.flowchartCard {
+  border-radius: 10px;
+  flex-shrink: 0;
+  width: 450px;
+  height: 370px;
+  border: 1px solid #e8dddd;
+}
+
+.flowchartCardOne {
+  background: #dfffd6;
+}
+.flowchartCardTwo {
+  background: #fff9b0;
+}
+.flowchartCardThree {
+  background: #d6e6ff;
+}
+.flowchartCardFour {
+  background: #ffe5b4;
+}
+
+.flowchart-card-matter {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.flowchart-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: clamp(10px, 2vw, 16px);
+}
+
+.stageTitle,
+.stageContent {
+  padding: 20px 30px;
+  border-radius: 12px;
+  border: 1px solid #a49d9d;
+  background: white;
+  font-size: clamp(16px, 2vw, 24px);
+  line-height: clamp(20px, 2vw, 30px);
+  font-weight: 400;
+}
+h1.stageTitle{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.t1 {
+  color: #045d56;
+}
+.t2 {
+  color: #665700;
+}
+.t3 {
+  color: #003366;
+}
+.t4 {
+  color: #993d00;
+}
+.flowchart-arrow img {
+  width: 100px;
+  height: 70px;
+}
+
+/* ------------------------------------ - ----------------------------------- */
+@media (max-width: 780px) {
+  .flowchartCard {
+    width: 350px;
+    height: 370px;
+  }
+
+  .stageTitle,
+  .stageContent {
+    padding: 10px 20px;
+  }
+  section.flowchart {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .flowchart-titles,
+  .flowchart-heading {
+    text-align: center;
+  }
+  .flowchartCard {
+    width: 350px;
+    height: 270px;
+  }
+}

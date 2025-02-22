@@ -1,0 +1,89 @@
+section.about{
+    padding: 30px 80px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap:24px;
+   margin-top: 60px;
+}
+.about-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-name{
+    width: 40%;
+}
+.title-name h1{ 
+    font-family: "Ovo", serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: clamp(32px, 5vw, 92px);
+}
+.about-context{
+    text-align: right;
+    font-family: 'Outfit';
+    font-weight: normal;
+    width: 40%;
+}
+.about-context p{  font-size: clamp(16px, 2vw, 24px);font-weight: 200;}
+.about-image {
+    width: 100%;
+    height: clamp(240px, 42vw, 437px);
+    object-fit: cover;
+}
+.about-texts{
+    display: flex;
+    justify-content: space-between;
+    gap:60px;
+}
+
+.about-texts p{
+    font-family: outfit;
+    font-size: clamp(16px, 4vw, 32px);
+line-height: clamp(20px, 5vw, 40px);
+
+    font-weight: 200;
+    text-align: justify;
+}
+/* ------------------------------------ - ----------------------------------- */
+@media (max-width: 780px){
+    section.about{
+        padding: 0 30px;
+    }
+    .about-title{
+        flex-direction: column;
+        justify-content: left;
+    }
+    .title-name{
+        width: 100%;
+    }
+    .about-context{
+        width: 100%;
+        text-align: left;
+    }
+    .about-texts{
+        flex-direction: column;
+        gap:10px;
+    }
+}
+
+@media (max-width: 500px){
+    section.about{
+        padding: 0 30px;
+    }
+    .about-title{
+        flex-direction: column;
+        justify-content:center;
+    }
+    .title-name{
+        width: 100%;
+        text-align: center;
+    }
+    .about-context{
+        width: 100%;
+        text-align: center
+    }
+}
+

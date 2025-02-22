@@ -1,0 +1,138 @@
+section.footerbackGround{
+    background:#49AC5C;
+}
+
+section.footer {
+    padding: 30px 80px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    font-family: outfit;
+    overflow: hidden;
+  }
+
+  .footer-logo img {
+    width: clamp(150px, 20vw, 250px);
+    height: clamp(20px, 6vw, 40px);
+    margin-bottom: 20px;
+}
+.footer-upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper-items{
+    display: flex;
+    gap:30px;
+}
+
+.upper-items li{
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-size: clamp(14px,2vw,16px);
+   font-weight: 400;
+   cursor: pointer;
+}
+.upper-items li:nth-child(1){
+   font-weight: bold;
+}
+
+.footer-upper-right{
+    display: flex;
+    flex-direction: column;
+    gap:14px;
+    align-items: start;
+    position: relative;
+    z-index: 10;
+}
+.circleUpper{
+    position: absolute;
+    top:50%;
+    left:45%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    width: clamp(340px, 50vw, 500px);
+    height: clamp(340px, 50vw, 500px);
+
+}
+
+.footer-upper-right h4{
+font-size: clamp(14px,2vw,16px);
+font-weight: 400;
+}
+.footer-upper-right h3{
+    font-size: clamp(18px,3vw,24px);
+    font-weight: 500;
+    line-height:14px
+}
+.footer-upper-right h1{
+    font-size: clamp(24px,4vw,36px);
+    font-weight: bold;
+    color: white;
+    line-height: 40px;
+}
+
+button.project{
+    padding: 10px 20px;
+    border:none;
+    background: #F8B353;
+    font-family: outfit;
+    font-size: clamp(12px,2vw,20px);
+    display: flex;
+    align-items: center;
+    gap:10px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.footer-below{
+    z-index: 10;
+}
+ul.copyright{
+    display: flex;
+    gap:20px;
+}
+ul.copyright li{
+    list-style-type: none;
+}
+ul.copyright li:nth-child(1){
+    font-weight: bold;
+}
+.footer-quote h1{
+    font-size: clamp(36px, 4vw, 64px);
+}
+/* ------------------------------------ - ----------------------------------- */
+
+@media (max-width:1024px) {
+    
+section.footer {
+    padding: 20px 30px;
+}
+    .footer-upper-left ul{
+      justify-content: space-between;
+    }
+    .footer-upper{
+        flex-direction: column;
+        align-items: start;
+        gap:30px;
+    }
+}
+
+@media (max-width:500px){
+.footer-upper{
+    align-items: center;
+}
+.footer-upper-right{
+    align-items: center;
+    text-align: center;
+}
+ul.copyright{
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+}
+.footer-quote h1{
+    text-align: center;
+}
+
+}

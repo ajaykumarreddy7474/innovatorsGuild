@@ -1,0 +1,131 @@
+section.download{
+    padding: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap:40px;
+    margin-top: 60px;
+    font-family: outfit;
+}
+
+
+.downloadLine{
+    width: 100%;
+    border:1px solid black;
+}
+.captions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:3px;
+}
+.innovate, .collaborate, .elevate, .empower{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+
+.img-one{
+    width: clamp(126px, 20vw, 330px);
+    height: clamp(60px, 10vw, 160px);
+
+} 
+.img-two{
+    width: clamp(64px, 10vw, 160px);
+    height: clamp(24px, 5vw, 60px);
+
+    } 
+    .img-three{
+        width: clamp(24px, 5vw, 84px);
+        height: clamp(24px, 5vw, 84px);
+        } 
+        .img-four{
+            width: clamp(110px, 12vw, 270px);
+            height: clamp(42px, 5vw, 94px);
+        }
+        .img-five{
+            width: clamp(70px, 8vw, 140px);
+            height: clamp(40px, 5vw, 80px);
+            
+        }
+        .img-six{
+            width: clamp(96px, 10vw, 170px);
+height: clamp(44px, 5vw, 80px);
+
+        }
+        .img-seven{
+            width: clamp(40px, 5vw, 85px);
+            height: clamp(40px, 5vw, 85px);
+        }
+            
+.innovate h1,.collaborate h1, .elevate, .empower h1   {
+    font-size: clamp(40px, 5vw, 96px);
+    font-weight: 500;
+}
+.empower h1{
+    text-decoration: underline;
+}
+.download-bottom{
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    align-items: center;
+    width: 60%;
+}
+.download-bottom .left {
+    display: flex;
+    flex-direction: column;
+}
+.download-bottom .left h3{
+    font-size:  clamp(20px, 2vw, 24px);
+    font-weight: 200; 
+    margin-bottom: 10px; 
+}
+
+.download-bottom button.download{
+    background: #000;
+    padding: 10px 20px;
+    color: white;
+    font-size: clamp(14px, 2vw, 20px);
+    font-weight: 200;
+    font-family: outfit;
+    display: inline-flex;
+    gap:16px;
+    width: 160px;
+    align-items: center;
+}
+/* ------------------------------------ - ----------------------------------- */
+@media (max-width: 780px){
+
+    section.download{
+            padding: 0 30px;    
+    }
+    .innovate{
+        gap:10px;
+    }
+    .download-bottom{
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .download-bottom .left{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px){
+.img-two,.img-three, .img-five{
+    display: none;
+}
+.innovate, .collaborate{
+    gap:4px;
+}
+.download-bottom button.download{
+    padding: 5px 10px;
+    width: 110px;
+}
+}

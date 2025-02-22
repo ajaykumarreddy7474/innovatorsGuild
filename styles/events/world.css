@@ -1,0 +1,137 @@
+section.world{
+    padding: 30px 80px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin-top: 60px;
+    font-family: outfit;
+}
+.worldTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.worldTitle h3{
+    font-size: clamp(24px, 4vw,40px);
+    font-weight: 300;
+}
+.userWorldprofileContent{
+    text-align: right;
+}
+.userWorldprofileContent h4{
+    font-weight: 300;
+    font-size: 16px;
+}
+.userWorldprofiles img {
+    width: clamp(40px, 7vw, 50px);
+    height: clamp(40px, 7vw, 50px);
+}
+
+.userWorldprofiles img:nth-child(2),
+.userWorldprofiles img:nth-child(3),
+.userWorldprofiles img:nth-child(4),
+.userWorldprofiles img:nth-child(5) {
+    margin-left: -30px;
+}
+/* ------------------------------------ - ----------------------------------- */
+.worlds-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
+    gap: 12px;
+    padding: 16px;
+    scrollbar-width: none;
+}
+
+.worlds-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.worlds-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.worldsCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 280px;
+    height: 460px;
+    font-family: outfit;
+    flex-shrink: 0;
+}
+
+.worldsTemplate {
+    display: none;
+}
+
+.worldTitle {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.worldContent {
+    font-size: 20px;
+    line-height: 20px;
+}
+.imageFrameWorld {
+    width: 100%;
+}
+
+.imageFrameWorld img {
+    width: 100%;
+    height: 260px;
+    display: block;
+}
+.worlds-card-matter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px;
+}
+.worlds-card-matter h1{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+}
+.worlds-card-matter p{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18px;
+  margin: 0;
+}
+
+/* ------------------------------------ - ----------------------------------- */
+@media (max-width:1024px){
+    .worldTitle h3{
+       width: 60%;
+    }
+}
+@media (max-width: 780px){
+
+    section.world{
+            padding: 0 30px;    
+    }
+    .worldTitle h3{
+        width: 60%;
+     }
+  }
+
+
+
+@media (max-width: 500px){
+    .updatesTitle h3{
+       width: 60%;
+      
+    }
+ 
+    
+  }
