@@ -30,8 +30,6 @@ This project demonstrates the process of transforming a UI/UX design into a full
 
 
 
-[🔗 View Project](https://your-live-link.netlify.app)  
-(*Replace with your actual hosted link or leave as "Coming Soon"*)
 
 
 
